@@ -1,0 +1,118 @@
+.footer {
+    background-color: black;
+    color: #a5a5a5;
+    /* padding: 0.4rem 0 2.5rem; */
+}
+.footer__image-container {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 60px;
+}
+.footer__image-wrapper {
+    display: inline-flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.footer__image {
+    position: absolute;
+    top: 31px;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.footer-container {
+    max-width: 76vw;
+}
+.footer__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid #464646;
+    margin: 1rem 0;
+}
+.footer__link {
+    color: #a5a5a5;
+    transition: all 0.15s linear;
+    padding: 0.9rem 0.9rem;
+    border-bottom: 2px solid transparent;
+}
+.footer__link:hover {
+    color: #04cbc5;
+    border-bottom: 2px solid #04cbc5;
+}
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem 0.6rem;
+    padding: 1rem 0;
+    border-bottom: 0.5px solid #464646;
+    text-align: center;
+}
+.footer__grid-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+}
+.footer__grid__link {
+    display: block;
+    color: #a5a5a5;
+    transition: all 0.15s linear;
+    padding: 0.2rem 0;
+}
+.footer__grid__link:hover {
+    color: #04cbc5;
+}
+.footer__texts {
+    padding: 2.5rem 0;
+}
+.footer__text {
+    margin-bottom: 0.8rem;
+}
+.footer__text--light {
+    color: #d7d7d7;
+}
+.footer__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__info-link {
+    color: white;
+    margin: 0.5rem;
+    transition: all 0.15s linear;
+}
+.footer__info-link--dark {
+    color: #a5a5a5;
+}
+.footer__info-link:hover {
+    color: #04cbc5;
+}
+.footer__icon {
+    font-size: 1.5rem !important;
+}
+
+@media all and (min-width: 600px) {
+    .footer__links {
+        justify-content: flex-end;
+    }
+    .footer__link {
+        padding: 1.3rem 0.9rem;
+    }
+    .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 960px) {
+    .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,5 @@
+.hero {
+    background: url("../../assets/images/Hero.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+}
