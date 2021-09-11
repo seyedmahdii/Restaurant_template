@@ -1,23 +1,13 @@
 import React from "react";
 import "./Footer.css";
-import FooterImage from "../../assets/images/Footer.svg";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import YouTubeIcon from "@material-ui/icons/YouTube";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 function Footer() {
     return (
         <footer className="footer">
-            <div className="footer__image-container">
-                <div className="footer__image-wrapper">
-                    <img
-                        src={FooterImage}
-                        alt="Footer"
-                        className="footer__image"
-                    />
-                </div>
-            </div>
             <div className="container footer-container">
                 <div className="footer__links">
                     <a href="#" className="footer__link">
@@ -81,46 +71,55 @@ function Footer() {
 
                 <div className="footer__texts">
                     <p className="footer__text footer__text--light">
-                        Delight customers everywhere with a branded custom-built
-                        native iOS, native Android and Installable Website
-                        Application.
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts.
                     </p>
                     <p className="footer__text">
-                        Opeqe is reliable, fast and commission free all-in-one
-                        ordering solutions for multi-location or single location
-                        restaurants.
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text.
                     </p>
                 </div>
 
                 <div className="footer__info">
                     <div>
-                        <span className="">&copy;2019 OPEQE INC</span> |&nbsp;
+                        <span>Powered by</span>
                         <a
-                            href="#"
+                            href="https://seyedmahdijalali.ir/"
                             className="footer__info-link footer__info-link--dark"
+                            target="_blank"
                         >
-                            Terms & Conditions
-                        </a>{" "}
-                        |&nbsp;
-                        <a
-                            href="#"
-                            className="footer__info-link footer__info-link--dark"
-                        >
-                            Privacy Policy
+                            &copy; Seyed Mahdi Jalali
                         </a>
                     </div>
                     <div>
-                        <a href="#" className="footer__info-link">
+                        <a
+                            href="https://www.instagram.com/seyedmahdii_/"
+                            className="footer__info-link"
+                            target="_blank"
+                        >
                             <InstagramIcon className="footer__icon" />
                         </a>
-                        <a href="#" className="footer__info-link">
+                        <a
+                            href="https://twitter.com/seyedmahdii_"
+                            className="footer__info-link"
+                            target="_blank"
+                        >
                             <TwitterIcon className="footer__icon" />
                         </a>
-                        <a href="#" className="footer__info-link">
-                            <FacebookIcon className="footer__icon" />
+                        <a
+                            href="https://www.linkedin.com/in/seyed-mahdi-jalali-730578210/"
+                            className="footer__info-link"
+                            target="_blank"
+                        >
+                            <LinkedInIcon className="footer__icon" />
                         </a>
-                        <a href="#" className="footer__info-link">
-                            <YouTubeIcon className="footer__icon" />
+                        <a
+                            href="https://github.com/seyedmahdii"
+                            className="footer__info-link"
+                            target="_blank"
+                        >
+                            <GitHubIcon className="footer__icon" />
                         </a>
                     </div>
                 </div>

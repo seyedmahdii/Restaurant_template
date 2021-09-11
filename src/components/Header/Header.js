@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./Header.css";
 import { IconButton } from "@material-ui/core";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import Logo from "../../assets/images/Logo.png";
 
 function Header() {
     const headerRef = useRef(null);
@@ -19,11 +20,13 @@ function Header() {
             <div className="container container--header">
                 <div className="header-container">
                     <div className="header__logo-container">
-                        <img
-                            src="https://cdn.opeqe.com/image/Logo/opeqe-logo.svg"
-                            alt="Logo"
-                            className="header__logo"
-                        />
+                        <a href="#">
+                            <img
+                                src={Logo}
+                                alt="Logo"
+                                className="header__logo"
+                            />
+                        </a>
                     </div>
 
                     <div className="header__list">

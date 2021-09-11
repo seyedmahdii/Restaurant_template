@@ -2,9 +2,9 @@ import React from "react";
 import "./FoodItem.css";
 import TimerIcon from "@material-ui/icons/Timer";
 
-function FoodItem({ food, left }) {
+function FoodItem({ food }) {
     return (
-        <div className="food" style={{ left: `${left}%` }}>
+        <div className="food">
             <a href="#">
                 <img src={food.image} alt={food.name} className="food__image" />
             </a>

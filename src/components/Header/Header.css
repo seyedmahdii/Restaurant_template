@@ -19,7 +19,7 @@
     padding: 0.7rem;
 }
 .header__logo {
-    width: 10rem;
+    width: 6.2rem;
 }
 .header__list {
     display: flex;
@@ -81,6 +81,9 @@
 }
 
 @media all and (min-width: 600px) {
+    .header__logo {
+        width: 8.5rem;
+    }
     .header__list-item {
         display: block;
     }

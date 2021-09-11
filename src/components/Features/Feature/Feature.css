@@ -1,0 +1,24 @@
+.feature {
+    text-align: center;
+    padding: 0.4rem;
+    transition: all 0.2s linear;
+}
+.feature:hover {
+    transform: translateY(-5px);
+}
+.feature__img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.feature__title {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+.feature__text {
+    color: #333;
+}

@@ -1,7 +1,8 @@
 .food {
-    position: absolute;
-    width: 33%;
-    height: auto;
+    margin: 0 0.5rem;
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
 }
 .food__image {
     border-radius: 0.35rem;
@@ -14,6 +15,7 @@
 }
 .food__title {
     font-size: 1.1rem;
+    text-transform: capitalize;
 }
 .food__category {
     color: #026764;
