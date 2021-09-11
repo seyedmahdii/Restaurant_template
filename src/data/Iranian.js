@@ -6,7 +6,7 @@ import image5 from "../assets/images/iranian5.jpg";
 
 export default [
     {
-        id: 145645635,
+        id: 1456745635,
         name: "kabab",
         image: image1,
         category: "Meat",
@@ -16,7 +16,7 @@ export default [
         feature: "Free Pickup",
     },
     {
-        id: 243523526,
+        id: 2430523526,
         name: "Juje",
         image: image2,
         category: "Meat",
@@ -26,7 +26,7 @@ export default [
         feature: "Free Pickup",
     },
     {
-        id: 307508878,
+        id: 3075087878,
         name: "shoule zard",
         image: image3,
         category: "brunch",
@@ -36,7 +36,7 @@ export default [
         feature: "Free Pickup",
     },
     {
-        id: 423547245,
+        id: 4235427245,
         name: "Bakery",
         image: image4,
         category: "organic",
@@ -46,7 +46,7 @@ export default [
         feature: "Free Pickup",
     },
     {
-        id: 423547245,
+        id: 4234547245,
         name: "Cookie",
         image: image5,
         category: "sweet",

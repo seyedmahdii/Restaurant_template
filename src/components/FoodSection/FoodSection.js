@@ -61,24 +61,26 @@ function FoodSection({ sectionName, foods }) {
                     <div className="food-section__underline"></div>
                 </header>
 
-                <div className="food-section__foods" ref={slider}>
-                    <div style={{ display: isScroll || "none" }}>
-                        <div
-                            className="arrow-container arrow-left"
-                            ref={leftArrow}
-                        >
-                            <ArrowBackIosIcon className="food-section__arrow" />
+                <div className="food-section__foods-wrapper">
+                    <div className="food-section__foods" ref={slider}>
+                        <div style={{ display: isScroll || "none" }}>
+                            <div
+                                className="arrow-container arrow-left"
+                                ref={leftArrow}
+                            >
+                                <ArrowBackIosIcon className="food-section__arrow" />
+                            </div>
+                            <div
+                                className="arrow-container arrow-right"
+                                ref={rightArrow}
+                            >
+                                <ArrowForwardIosIcon className="food-section__arrow" />
+                            </div>
                         </div>
-                        <div
-                            className="arrow-container arrow-right"
-                            ref={rightArrow}
-                        >
-                            <ArrowForwardIosIcon className="food-section__arrow" />
-                        </div>
+                        {foods.map((food) => (
+                            <FoodItem food={food} key={food.id} />
+                        ))}
                     </div>
-                    {foods.map((food) => (
-                        <FoodItem food={food} key={food.id} />
-                    ))}
                 </div>
             </div>
         </div>

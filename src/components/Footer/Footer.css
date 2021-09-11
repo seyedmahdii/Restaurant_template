@@ -10,9 +10,17 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border-bottom: 0.5px solid #464646;
     margin: 1rem 0;
+    overflow-x: auto;
+}
+.footer__links::-webkit-scrollbar {
+    background-color: rgb(175, 175, 175);
+    height: 2px;
+}
+.footer__links::-webkit-scrollbar-thumb {
+    background-color: #04cbc5;
 }
 .footer__link {
     color: #a5a5a5;

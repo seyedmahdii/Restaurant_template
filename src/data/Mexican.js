@@ -14,7 +14,7 @@ export default [
         feature: "Free Pickup",
     },
     {
-        id: 1928348264864,
+        id: 192848264864,
         name: "oluak fkia",
         image: mexican2,
         category: "Taco",
@@ -24,7 +24,7 @@ export default [
         feature: "Free Pickup",
     },
     {
-        id: 1928348264864,
+        id: 192834826484,
         name: "Gordita Taco Combo",
         image: mexican3,
         category: "Taco",

@@ -14,7 +14,11 @@ function FoodItem({ food }) {
                 <span className="food__category">{food.category}</span>
                 <ul className="food__tags">
                     {food.tags.map((tag) => (
-                        <li>
+                        <li
+                            key={Math.floor(
+                                Math.random() * new Date().getTime().toString()
+                            )}
+                        >
                             <a className="food__tag" href="#">
                                 {tag}
                             </a>

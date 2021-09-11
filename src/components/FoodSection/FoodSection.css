@@ -14,13 +14,15 @@
     height: 2px;
     background-color: black;
 }
+.food-section__foods-wrapper {
+    transform: translateZ(0);
+}
 .food-section__foods {
     width: 100%;
     max-width: 90vw;
     overflow-x: auto;
     display: flex;
     align-items: center;
-    position: relative;
     transition: 0.15s all linear;
     padding-bottom: 0.2rem;
 }
@@ -32,7 +34,7 @@
     background-color: #04cbc5;
 }
 .arrow-container {
-    position: absolute;
+    position: fixed;
     top: 120px;
     z-index: 1000;
     background-color: #026764;

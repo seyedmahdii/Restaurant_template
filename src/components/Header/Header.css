@@ -5,12 +5,10 @@
     right: 0;
     width: 100%;
     transition: all 0.1s linear;
-}
-.header--fixed {
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
 }
 .container--header {
-    max-width: 82vw;
+    max-width: 90vw;
 }
 .header-container {
     display: flex;
@@ -21,70 +19,146 @@
 .header__logo {
     width: 6.2rem;
 }
-.header__list {
+.header__right {
     display: flex;
     align-items: center;
+}
+.header__list {
+    background-color: rgba(3, 3, 3, 0.75);
+    position: fixed;
+    left: -290px;
+    top: 0px;
+    width: 290px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s linear;
+    box-shadow: 1px 2px 5px black;
+}
+.header__list--open {
+    left: 0px;
 }
 .header__list > * {
     margin: 0 0.6rem;
 }
 .header__list-item {
-    color: black;
+    color: #ebebeb;
+    font-size: 1.1rem;
     transition: all 0.15s linear;
-    padding: 0.5rem;
-    display: none;
+    padding: 0.6rem;
+    background-color: #222;
+    border-radius: 2rem;
+    margin: 0.2rem 0.6rem;
 }
 .header__list-item:hover {
     background-color: black;
     color: white;
-    border-radius: 2rem;
+}
+.header__buttons {
+    margin: 1rem 0.6rem;
+}
+.header__buttons > * {
+    margin: 0 0.3rem;
 }
 .header__button {
-    padding: 5px 10px;
     border-radius: 1rem;
+    padding: 5px 10px;
     font-size: 0.75rem;
 }
 .header__button--bordered {
-    color: black;
-    border: 1px solid black;
+    border: 1px solid #08b6b0;
+    color: white;
+    background-color: #08b6b0;
 }
 .header__button--fill {
-    background-color: black;
-    color: #ffd200;
+    border: 1px solid #08b6b0;
+    color: #08b6b0;
+    background-color: white;
 }
 .header__icon {
-    color: black;
+    color: #222;
     font-size: 1.8rem !important;
 }
-
+.header__main-btn {
+    padding: 0.4rem !important;
+}
+.header__menu-icon {
+    color: #222 !important;
+}
 .header--fixed {
     background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.2rem 0;
 }
 .header--fixed .header__icon {
-    color: #02645f;
-}
-.header--fixed .header__button--fill {
-    border: 1px solid #02645f;
-    color: #02645f;
-    background-color: white;
-}
-.header--fixed .header__button--bordered {
-    border: 1px solid #02645f;
-    color: white;
-    background-color: #02645f;
-}
-.header--fixed .header__list-item {
-    color: #696969;
-}
-.header--fixed .header__list-item:hover {
-    color: white;
+    color: #08b6b0;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 768px) {
+    .container--header {
+        max-width: 82vw;
+    }
     .header__logo {
         width: 8.5rem;
     }
+    .header__list {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+        left: auto;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        box-shadow: none;
+    }
     .header__list-item {
-        display: block;
+        color: #222;
+        padding: 0.5rem;
+        font-size: 1rem;
+        background-color: transparent;
+    }
+    .header__list-item:hover {
+        background-color: #222;
+        color: white;
+        border-radius: 2rem;
+    }
+    /* ***************** */
+    .header--fixed .header__button--fill {
+        border: 1px solid #08b6b0;
+        color: #08b6b0;
+        background-color: white;
+    }
+    .header--fixed .header__button--bordered {
+        border: 1px solid #08b6b0;
+        color: white;
+        background-color: #08b6b0;
+    }
+    .header--fixed .header__list-item {
+        color: #696969;
+        font-size: 1rem;
+    }
+    .header--fixed .header__list-item:hover {
+        color: white;
+    }
+    /* ***************** */
+    .header__button--fill {
+        background-color: #222;
+        color: white;
+        border-color: #222;
+    }
+    .header__button--bordered {
+        color: #222;
+        background-color: transparent;
+        border-color: #222;
+    }
+    .header__buttons {
+        margin: 0;
+    }
+    .header__main-btn {
+        padding: 0.5rem !important;
+    }
+    .header__menu-btn {
+        display: none !important;
     }
 }
