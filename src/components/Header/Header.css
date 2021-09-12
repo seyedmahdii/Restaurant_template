@@ -143,6 +143,7 @@
     }
     .header--fixed .header__list-item:hover {
         color: white;
+        background-color: #222;
     }
 
     .header__button--fill {
