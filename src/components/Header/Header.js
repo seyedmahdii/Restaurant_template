@@ -4,23 +4,25 @@ import { IconButton } from "@material-ui/core";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import MenuIcon from "@material-ui/icons/Menu";
 import Logo from "../../assets/images/Logo.png";
+import WhiteLogo from "../../assets/images/Logo-white.png";
 import CloseIcon from "@material-ui/icons/Close";
 
 function Header() {
     const headerRef = useRef(null);
     const headerList = useRef(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isHeaderFixed, setIsHeaderFixed] = useState(false);
 
     window.addEventListener("scroll", () => {
         const scrollHeight = window.pageYOffset;
-        if (scrollHeight > 150) {
+        if (scrollHeight > 120) {
             headerRef.current.className = "header header--fixed";
+            setIsHeaderFixed(true);
         } else {
             headerRef.current.className = "header";
+            setIsHeaderFixed(false);
         }
     });
-
-    useEffect(() => {}, []);
 
     const sideMenuHandler = () => {
         if (isMenuOpen) {
@@ -38,7 +40,7 @@ function Header() {
                     <div className="header__logo-container">
                         <a href="#">
                             <img
-                                src={Logo}
+                                src={isHeaderFixed ? Logo : WhiteLogo}
                                 alt="Logo"
                                 className="header__logo"
                             />

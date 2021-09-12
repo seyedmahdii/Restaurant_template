@@ -17,12 +17,13 @@
     padding: 0.7rem;
 }
 .header__logo {
-    width: 6.2rem;
+    width: 7.2rem;
 }
 .header__right {
     display: flex;
     align-items: center;
 }
+/* Styles of sidebar menu for small screen */
 .header__list {
     background-color: rgba(3, 3, 3, 0.75);
     position: fixed;
@@ -76,15 +77,14 @@
     background-color: white;
 }
 .header__icon {
-    color: #222;
+    color: #f9f9f9;
     font-size: 1.8rem !important;
 }
 .header__main-btn {
     padding: 0.4rem !important;
 }
-.header__menu-icon {
-    color: #222 !important;
-}
+
+/* Styles of fixed header for small screen */
 .header--fixed {
     background-color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -92,6 +92,9 @@
 }
 .header--fixed .header__icon {
     color: #08b6b0;
+}
+.header--fixed .header__menu-icon {
+    color: #222 !important;
 }
 
 @media all and (min-width: 768px) {
@@ -113,17 +116,17 @@
         box-shadow: none;
     }
     .header__list-item {
-        color: #222;
+        color: #f9f9f9;
         padding: 0.5rem;
         font-size: 1rem;
         background-color: transparent;
     }
     .header__list-item:hover {
-        background-color: #222;
-        color: white;
+        color: #222;
+        background-color: white;
         border-radius: 2rem;
     }
-    /* ***************** */
+    /* Styles of fixed header for large screen */
     .header--fixed .header__button--fill {
         border: 1px solid #08b6b0;
         color: #08b6b0;
@@ -141,16 +144,16 @@
     .header--fixed .header__list-item:hover {
         color: white;
     }
-    /* ***************** */
+
     .header__button--fill {
-        background-color: #222;
-        color: white;
-        border-color: #222;
+        background-color: #f9f9f9;
+        color: #222;
+        border-color: #f9f9f9;
     }
     .header__button--bordered {
-        color: #222;
+        color: #f9f9f9;
         background-color: transparent;
-        border-color: #222;
+        border-color: #f9f9f9;
     }
     .header__buttons {
         margin: 0;

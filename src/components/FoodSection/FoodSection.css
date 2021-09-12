@@ -8,11 +8,12 @@
     padding: 0.5rem 0;
     border-bottom: 1px solid rgb(212, 212, 212);
     text-transform: capitalize;
+    color: #222;
 }
 .food-section__underline {
     width: 35px;
     height: 2px;
-    background-color: black;
+    background-color: #222;
 }
 .food-section__foods-wrapper {
     transform: translateZ(0);

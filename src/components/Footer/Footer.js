@@ -33,37 +33,37 @@ function Footer() {
                 <div className="footer__grid">
                     <div className="footer__grid-item">
                         <h5 className="footer__grid-title">Main Menu</h5>
-                        <a href="#" className="footer__grid__link">
+                        <a href="#" className="footer__grid-link">
                             Pickup
                         </a>
-                        <a href="#" className="footer__grid__link">
+                        <a href="#" className="footer__grid-link">
                             Delivery
                         </a>
                     </div>
                     <div className="footer__grid-item">
                         <h5 className="footer__grid-title">Orders</h5>
-                        <a href="#" className="footer__grid__link">
+                        <a href="#" className="footer__grid-link">
                             Upcoming Orders
                         </a>
-                        <a href="#" className="footer__grid__link">
+                        <a href="#" className="footer__grid-link">
                             Recent Orders
                         </a>
                     </div>
                     <div className="footer__grid-item">
                         <h5 className="footer__grid-title">Profile</h5>
-                        <a href="#" className="footer__grid__link">
+                        <a href="#" className="footer__grid-link">
                             Promos & Credits
                         </a>
-                        <a href="#" className="footer__grid__link">
+                        <a href="#" className="footer__grid-link">
                             Rewards
                         </a>
                     </div>
                     <div className="footer__grid-item">
                         <h5 className="footer__grid-title">Support</h5>
-                        <a href="#" className="footer__grid__link">
+                        <a href="#" className="footer__grid-link">
                             Contact Us
                         </a>
-                        <a href="#" className="footer__grid__link">
+                        <a href="#" className="footer__grid-link">
                             Live Chat
                         </a>
                     </div>
