@@ -1,0 +1,33 @@
+.loading {
+    background-color: #222;
+    color: #f9f9f9;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.loading__title::after {
+    animation: loading 1s infinite;
+    content: "Loading";
+}
+
+@keyframes loading {
+    33% {
+        content: "Loading.";
+    }
+    66% {
+        content: "Loading..";
+    }
+    100% {
+        content: "Loading...";
+    }
+}
+
+@media all and (min-width: 768px) {
+    .loading {
+        font-size: 3.5rem;
+    }
+}
