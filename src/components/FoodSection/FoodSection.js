@@ -44,6 +44,14 @@ function FoodSection({ sectionName, foods }) {
         }
         let playNumber = setInterval(autoScroll, 50);
 
+        // Touch event for mobile devices
+        slider.current.addEventListener("touchstart", () => {
+            clearInterval(playNumber);
+        });
+        slider.current.addEventListener("touchend", () => {
+            playNumber = setInterval(autoScroll, 50);
+        });
+
         // Stoping AutoScroll on hover
         slider.current.addEventListener("mouseover", () => {
             clearInterval(playNumber);
